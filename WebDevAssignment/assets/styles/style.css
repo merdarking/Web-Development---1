@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    display: flex;
+    flex-direction: row;
+
+    position: sticky;
+    top: 0;
+
+    background: -webkit-linear-gradient(top, #35A426, #48827A);
+}
+
+.box {
+    flex-basis: 70%;
+    border: 5px solid #35A326;
+}
+
+h1 {
+    margin-left: 50px;
+    color: #022731;
+}
+
+h2 {
+    text-align: center;
+    color: #022731;
+}
+
+h3 {
+    text-align: left;
+    color: #091D36;
+}
+
+nav {
+    display: flex;
+    flex-basis: 30%;
+}
+
+nav .box {
+    flex-grow: 1;
+    align-items: center;
+}
+
+nav .box:hover {
+    background: -webkit-linear-gradient(top, #126612, #48827A);
+    font-weight: bold;
+}
+
+nav p {
+    list-style-type: none;
+    font-size: 1.5em;
+
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #032731;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    background-color: #48827A;
+}
+
+#content {
+    flex-basis: 75%;
+    padding: 30px;
+    text-align: justify;
+}
+
+.container {
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgb(3, 86, 110, 0.5);
+}
+
+.lokasi {
+    font-weight: bold;
+}
+
+article {
+    scroll-margin-top: 5em;
+}
+
+aside {
+    flex-basis: 25%;
+    width: 100%;
+    padding: 10px;
+    
+    text-align: center;
+}
+
+#profile {
+    background-image: radial-gradient(#1A59CF, #3C8BA7, #48827A);
+}
+
+img {
+    width: 100%;
+}
+
+#content img {
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+}
+
+aside article header {
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: -webkit-linear-gradient(top, #48827A, #35A426);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#profile img {
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+table {
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+    body > header {
+        flex-direction: column;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    #content,
+    aside {
+        padding: 0;
+    }
+    nav .box:active {
+        background: -webkit-linear-gradient(top, #126612, #48827A);
+        font-weight: bold;
+    }
+
+    #content img {
+        height: 100px;
+    }
+}
